@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/complain.css">
+</head>
+<body>
+	<div class="mess" style="height:600px;">
+		<p><h1 style="text-decoration:underline;color:red;"><span style="color:#000066;">COMPLAIN BOX</span></h1></p>
+		<br/>
+	<div>
+		<form action="complain.php" method="post">
+			<b>Name</b><br/><br/><input type="text" name="name"placeholder="Enter your name" class="common" maxlength="30"><br/><br/>
+			<b>Mobile No.</b><br/><br/>
+			<input type="text" value="+91" readonly="readonly" style="width:25px;">
+			<input type="text" name="contact"placeholder="Enter Your Mobile Number" class="common" maxlength="10"><br/><br/>
+	
+			<b>ROOM.NO:</b><br/><br/> 
+			<select name="block" class="common" placeholder="select your block" required="required">
+				<option value="">Please Choose...</option>
+				<option value="NB">NB</option>
+				<option value="MESS">MESS</option>
+				<option value="MM">MM</option>
+				<option value="NBX">NBX</option>
+				<option value="IT">IT</option>
+				<option value="IH">IH</option>
+			</select>
+			&nbsp &nbsp<input type="text" name="room.no" maxlength="3" placeholder="enter your room no." class="common"><br/><br/><br/>
+
+			<b>Select Your complain choice</b><br/><br/>
+			
+				<input type="radio" id="plumber" name="choice" value="P">
+				<label for="plumber">Plumber</label><br/>
+			
+				<input type="radio" id="electrician" name="choice" value="E">
+				<label for="electrician">Electrician</label><br/>
+			
+				<input type="radio" id="house keeping" name="choice" value="HK">
+				<label for="house keeping">House keeping</label><br/>
+
+				<input type="radio" id="carpenter" name="choice" value="C">
+				<label for="carpenter">Carpenter</label>
+			</div><br/>
+
+			<textarea name="complian" cols="30" rows="6" required="required" placeholder="enter your complain"></textarea><br/>
+			<button type="submit" value="submit">submit</button>
+	</div>
+		</form>
+	</div>
+</body>
+</html>

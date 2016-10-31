@@ -1,0 +1,20 @@
+body{
+	background-image: url("assets/image/mess.jpg");
+	background-size: cover;
+	}
+.mess
+{
+	border:1px solid black; 
+	width:600px;height:500px;
+	padding-left:50px;
+	margin:auto;margin-left:350px;margin-top:120px;
+	background-image:url('assets/image/paper1.gif');
+	background-size:cover;
+}
+.common{
+	 outline:none;
+	 border:none;border-bottom:1px solid black;
+}
+textarea,input,select{
+	background:transparent;
+}

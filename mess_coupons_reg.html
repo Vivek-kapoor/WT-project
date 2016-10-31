@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/mess.css">
+</head>
+<body>
+<script>
+	var flag1=0;
+	var flag2=0;
+	var flag3=0;
+
+		function modify(event)
+		{
+			event.target = event.target || srcElement;
+			//alert(event.target.innerHTML);
+			if(event.target.innerHTML=="Food Court")
+			{
+				if(flag1==0)
+				{
+					document.getElementById("Food court2").disabled=true;
+					flag1=1;
+					if(flag2==1 || flag3==1)
+					{
+						document.getElementById("Aman Rasoi2").disabled=false;
+						document.getElementById("Aman Rasoi2").checked=false;
+						document.getElementById("Hostel Mess2").disabled=false;
+						document.getElementById("Hostel Mess2").checked=false;
+						flag2=0;
+						flag3=0;
+					}
+				}
+			}
+			else if(event.target.innerHTML=="Aman Rasoi")
+			{
+				if(flag2==0)
+				{
+					document.getElementById("Aman Rasoi2").disabled=true;
+					flag2=1;
+					if(flag1==1 || flag3==1)
+					{
+						document.getElementById("Food court2").disabled=false;
+						document.getElementById("Food court2").checked=false;
+						document.getElementById("Hostel Mess2").disabled=false;
+						document.getElementById("Hostel Mess2").checked=false;
+						flag1=0;
+						flag3=0;
+					}
+				}
+			}
+			else if(event.target.innerHTML=="Hostel Mess")
+			{
+				if(flag3==0)
+				{
+					document.getElementById("Hostel Mess2").disabled=true;
+					flag3=1;
+					if(flag1=1 || flag2==1)
+					{
+						document.getElementById("Aman Rasoi2").disabled=false;
+						document.getElementById("Aman Rasoi2").checked=false;
+						document.getElementById("Food court2").disabled=false;
+						document.getElementById("Food court2").checked=false;
+						flag1=0;
+						flag2=0;
+					}
+				}
+			}
+}
+</script>
+	<div class="mess">
+		<p><h1 style="text-decoration:underline;color:red;"><span style="color:#000066;">MESS COUPONS</span></h1></p>
+		<br/>
+	<div>
+		<form action="action_page.php" method="post">
+			<b>Name</b><br/><br/><input type="text" name="name"placeholder="Enter your name" class="common" maxlength="30" required="required"><br/><br/>
+
+			<b>ROOM.NO:</b><br/><br/>
+			<select name="block" class="common" placeholder="select your block" required="required">
+				<option>Please Choose...</option>
+				<option>NB</option>
+				<option>MESS</option>
+				<option>MM</option>
+				<option>NBX</option>
+				<option>IT</option>
+				<option>IH</option>
+			</select>
+			&nbsp &nbsp<input type="text" name="Room.No" maxlength="3" placeholder="enter your room no." class="common"  required="required"><br/><br/><br/>
+
+
+			<b>Select Your Mess choice</b><br/><br/>
+			<div style="float:left;" id="d1">
+				<b>Select Your 1<sup>st</sup> Prefernce</b><br/>
+
+				<input type="radio" id="Food court1" name="choice1" value="FC"  required="required">
+				<label for="Food court1" onclick="modify(event)">Food Court</label><br/>
+
+				<input type="radio" id="Aman Rasoi1" name="choice1" value="AR" required="required">
+				<label for="Aman Rasoi1" onclick="modify(event)">Aman Rasoi</label><br/>
+
+				<input type="radio" id="Hostel Mess1" name="choice1" value="HM" required="required">
+				<label for="Hostel Mess1" onclick="modify(event)">Hostel Mess</label>
+			</div>&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+
+			<div style="display:inline-block" id="d2">
+				<b>Select Your 2<sup>nd</sup> Prefernce</b><br/>
+
+				<input type="radio" id="Food court2" name="choice2" value="FC" required="required">
+				<label for="Food court2">Food Court</label><br/>
+
+				<input type="radio" id="Aman Rasoi2" name="choice2" value="AR" required="required">
+				<label for="Aman Rasoi2">Aman Rasoi</label><br/>
+
+				<input type="radio" id="Hostel Mess2" name="choice2" value="HM" required="required">
+				<label for="Hostel Mess2">Hostel Mess</label><br/><br/><br/>
+			</div>
+	</div>
+		<button type="submit" value="submit">submit</button>
+		</form>
+	</div>
+</body>
+</html>
