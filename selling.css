@@ -1,0 +1,344 @@
+  .footer{
+		width: 100%;
+		background-color: #006;
+		margin: auto;
+		margin-left: -550px;
+		color: white;
+		 clear: both;
+		 text-align: center;
+    	z-index: 10;
+    	height: 3em;
+    	 position:fixed;
+    	bottom:0;
+    }
+  
+		.myButton {
+	margin-left: 85%;
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background-color:#006;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	}
+
+	.myButton:hover {
+	background-color:#f00;
+	}
+
+	.myButton:active {
+	position:relative;
+	top:1px;
+	}
+
+  1#box {
+  float: left;
+  height: 300px;
+  width: 350px;
+  margin: 20px;
+  padding: 10px;
+  border: solid;
+  border-radius: 10px;
+}  
+#nav ul{
+	width: 80%;
+}
+#nav li{
+    float: left;
+   	width: 12em;
+   	font-size: 1.3em;
+   	text-align: center;
+        }
+
+#nav{
+    background: #ff0000;
+    list-style-type: none;
+    
+      }
+#nav li a,.dropbtn {
+	text-decoration: none;
+	color: black;
+	display:block;
+    padding:15px;
+    color:#fff;
+    background:#006;
+}
+
+#nav a:hover ,.dropdown:hover .dropbtn{
+	z-index: 100;
+	font-size: 1.4em;
+    color:#fff;
+    background:#ff0000;
+    box-shadow: 5px 5px 50px 3px black;
+    
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+	z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #006}
+
+.show {display:block;}
+ 
+
+.inputBox ::-webkit-input-placeholder 
+{ /* WebKit, Blink, Edge */
+    color:    #ffffff;
+}
+
+.inputBox1 ::-webkit-input-placeholder 
+{ /* WebKit, Blink, Edge */
+    color:    #ffffff;
+}
+#loginnav1 a{
+	text-decoration: none;
+	color: white;
+	font-size:3em;
+	}
+
+	#loginnav2 a{
+	text-decoration: none;
+	color: white;
+	font-size:3em;
+	}	
+	
+	#loginnav a:hover{
+	z-index: 100;
+	font-size: 3.5em;
+    color:#f30;
+    background:#ff0000;
+    box-shadow: 10px 10px 50px 5px black;
+    color: white;
+	}
+	
+	#Box 
+	{
+		margin-top: 150px;
+		margin-left: 500px;
+		height: 500px;
+		width: 800px;
+		box-shadow: 5px 10px 100px 1px #a0b3b0;
+		border: #000 5px solid;
+
+	}
+	
+	#mainButL
+	{
+		background-color: #006;
+		color: white;
+		/*border: green 1px solid;*/
+		border: #000 4px solid;
+		height: 70px;
+		width: 200px;
+		outline: none;
+		font-size: 25px;
+		margin-left: 210px;
+		padding: 0px;
+	}
+	
+	#mainButS
+	{
+		background-color: #006;
+		color: white;
+		/*border: green 1px solid;*/
+		border: #000 5px solid;
+		height: 70px;
+		width: 200px;
+		outline: none;
+		margin-left: 0px;
+		margin-top: 30px;
+		font-size: 25px;
+		padding: 0px;
+	}
+	
+	.div
+	{
+		padding: 70px 50px 100px 75px;
+
+	}
+	
+	.inputBox input[type=text], input[type=submit]
+	{
+		background-color: #006;
+		border: #000 2px solid;
+		height: 30px;
+		width: 250px;
+		outline: none;
+		padding-left: 10px;
+		font-size: 15px;
+		margin-left: 280px;
+		color:white;
+	}
+	
+	.inputBox input:focus
+	{
+		border: 2px #f00 solid;
+		height: 35px;
+		font-size: 20px;
+	}
+	.inputBox1 input, select
+	{
+		background-color: #006;
+		border: #000 2px solid;
+		height: 30px;
+		width: 250px;
+		outline: none;
+		padding-left: 10px;
+		font-size: 15px;
+		color:white;
+	}
+
+	.inputBox1 input[type=text], input[type=password]
+	{
+		background-color: #006;
+		border: #000 2px solid;
+		height: 30px;
+		width: 250px;
+		outline: none;
+		padding-left: 10px;
+		font-size: 15px;
+		margin-left: 150px;
+		color:white;
+
+	}
+	
+	.inputBox1 input:focus
+	{
+		border: 2px #f00 solid;
+		height: 35px;
+		font-size: 20px;
+	}
+
+	/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+#box {
+	float: left;
+	height: 300px;
+	width: 350px;
+	margin: 20px;
+	padding: 10px;
+	border: solid;
+	border-radius: 10px;
+
+}
+
+.myButton {
+	margin: : auto;
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background-color:#006;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	}
+#sell input:focus
+	{
+		border: 2px #f00 solid;
+		height: 35px;
+		font-size: 20px;
+	}
+#sell input, select
+	{
+		background-color: #006;
+		border: #000 2px solid;
+		height: 30px;
+		width: 250px;
+		outline: none;
+		padding-left: 10px;
+		font-size: 15px;
+		color:white;
+	}
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ffffff;
+}
+.sell
+{
+	border:1px solid black; 
+	width:800px;height:600px;
+	padding-left:50px;
+	margin:auto;
+	margin-top: 80px;
+	background: linear-gradient(to bottom right,#429ef4,#f00);
+	box-shadow: 10px 1px 70px 1px black;
+}
+
+#img{
+	background: url('../images/selling.jpg') no-repeat center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

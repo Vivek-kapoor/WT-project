@@ -1,0 +1,165 @@
+#loginnav1 a{
+	text-decoration: none;
+	color: white;
+	font-size:3em;
+	}
+
+	#loginnav2 a{
+	text-decoration: none;
+	color: white;
+	font-size:3em;
+	}	
+	
+	#loginnav a:hover{
+	z-index: 100;
+	font-size: 3.5em;
+    color:#f30;
+    background:#ff0000;
+    box-shadow: 10px 10px 50px 5px black;
+    color: white;
+	}
+	
+	#Box 
+	{
+		margin-top: 150px;
+		margin-left: 500px;
+		height: 500px;
+		width: 800px;
+		box-shadow: 5px 10px 100px 1px #a0b3b0;
+		border: #000 5px solid;
+	}
+	
+	#mainButL
+	{
+		background-color: #006;
+		color: white;
+		/*border: green 1px solid;*/
+		border: #000 4px solid;
+		height: 70px;
+		width: 200px;
+		outline: none;
+		font-size: 25px;
+		margin-left: 210px;
+		padding: 0px;
+	}
+	
+	#mainButS
+	{
+		background-color: #006;
+		color: white;
+		/*border: green 1px solid;*/
+		border: #000 5px solid;
+		height: 70px;
+		width: 200px;
+		outline: none;
+		margin-left: 0px;
+		margin-top: 30px;
+		font-size: 25px;
+		padding: 0px;
+	}
+	
+	.div
+	{
+		padding: 70px 50px 100px 75px;
+	}
+	
+	.inputBox input[type=text], input[type=submit]
+	{
+		background-color: #006;
+		border: #000 2px solid;
+		height: 30px;
+		width: 250px;
+		outline: none;
+		padding-left: 10px;
+		font-size: 15px;
+		margin-left: 280px;
+		color:white;
+	}
+	
+	.inputBox input:focus
+	{
+		border: 2px #f00 solid;
+		height: 35px;
+		font-size: 20px;
+	}
+	.inputBox1 input, select
+	{
+		background-color: #006;
+		border: #000 2px solid;
+		height: 30px;
+		width: 250px;
+		outline: none;
+		padding-left: 10px;
+		font-size: 15px;
+		color:white;
+	}
+
+	.inputBox1 input[type=text], input[type=password]
+	{
+		background-color: #006;
+		border: #000 2px solid;
+		height: 30px;
+		width: 250px;
+		outline: none;
+		padding-left: 10px;
+		font-size: 15px;
+		margin-left: 150px;
+		color:white;
+
+	}
+	
+	.inputBox1 input:focus
+	{
+		border: 2px #f00 solid;
+		height: 35px;
+		font-size: 20px;
+	}
+
+	/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+#box {
+	float: left;
+	height: 300px;
+	width: 350px;
+	margin: 20px;
+	padding: 10px;
+	border: solid;
+	border-radius: 10px;
+}
